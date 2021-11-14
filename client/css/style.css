@@ -148,3 +148,7 @@ footer {
 .form {
   padding-bottom: 0px;
 }
+
+.carousel-inner img {
+  margin: auto;
+}
