@@ -1,4 +1,5 @@
 .bg1 {
+  margin-left: 0px;
   background-image: url("/client/image/Login\ box.png");
 
   height: 500px;
@@ -21,11 +22,22 @@
 
 .contain2 {
   position: absolute;
-  right: 0;
-  left: 280px;
-  margin: 20px;
-  max-width: 300px;
+  margin-left: 600px;
+  margin-right: 20px;
   background-color: #869ea1;
+}
+
+.bg2 {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background-image: url("/client/image/Register\ box.png");
+
+  height: 800px;
+
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .bg3 {
@@ -42,10 +54,6 @@
 .header {
   padding-top: 20px;
   padding-bottom: 10px;
-}
-.color {
-  background-image: url("../image/annie-spratt-yI3weKNBRTc-unsplash.jpg");
-  background-size: cover;
 }
 
 .column {
@@ -134,4 +142,8 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.form {
+  padding-bottom: 0px;
 }
