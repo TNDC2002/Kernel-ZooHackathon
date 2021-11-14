@@ -177,3 +177,10 @@ footer {
   background-color: white;
   padding: 10px;
 }
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
