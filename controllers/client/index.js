@@ -16,14 +16,18 @@ exports.index = (req, res) => {
     }
 }
 exports.Search = (req, res) => {
-    disease.find({ location: req.body.search }).exec((err, data) => {
+    data.find({ user: req.body.search }).exec((err, data) => {
+        var searched = req.body.search
         if (data[0]){
             console.log(data)
-            res.render("index", { login: true, userdata: "", rmoney: "" })
+            res.render("result", { results: data, searched: searched })
         }
         else{
-            res.send("not found")
+            res.render("result", { results: 0, searched: searched})
         }
         
     })
+}
+exports.result = (req, res) => {
+    
 }
