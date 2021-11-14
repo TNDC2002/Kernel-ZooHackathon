@@ -41,13 +41,21 @@
                     <form action="#!">
                         <h1 class="text-center">Log in</h1>
                         <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" name="username" class="form-control">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" class="form-control">
                           </div>
                           <div class="form-group">
                             <label for="password">Password</label>
                             <input type="password" name="password" class="form-control">
                           </div>
+                          <!-- báo lỗi sai -->
+                          <div hidden>
+                              <h1>Login faile</h1>
+                              <p>Username or password is not correct !!!</p>
+                              <p>Retry</p>
+                          </div>
+
+
                           <div class="container">
                             <div class="row">
                               <div class="col text-center">
@@ -82,17 +90,13 @@
                             <label>Password</label>
                             <input type="password" class="form-control">
                             </div>
-    
-                            <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control">
+
+                            <!-- báo lỗi sai -->
+                            <div hidden>
+                                <h1>Register faile</h1>
+                                <p>Email have been used</p>
                             </div>
-    
-                            <div class="form-group">
-                                <label>Phone</label>
-                                <input type="tel" class="form-control">
-                            </div>
-    
+
                             <div class="container">
                                 <div class="row">
                                     <div class="col text-center">
