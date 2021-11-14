@@ -1,6 +1,6 @@
 var express = require('express');
 //const Auth = require('../models/auth');
-var data = require('../models/sql')
+var data = require('../models/userdata')
 var router = express.Router();
 var CheckLogin = require('../models/login_checker_forindex')
 

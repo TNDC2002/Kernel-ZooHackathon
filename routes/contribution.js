@@ -4,7 +4,7 @@ var router = express.Router();
 var bodyparser = require('body-parser')
 
 //database
-var data = require('../models/sql')
+var data = require('../models/userdata')
 
 //mã hóa
 var hashing = require('../models/hashing')

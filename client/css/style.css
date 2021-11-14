@@ -92,3 +92,18 @@
 .button:hover {
   background-color: #555;
 }
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.color {
+  background-image: url("../image/annie-spratt-yI3weKNBRTc-unsplash.jpg");
+  background-size: cover;
+}
+
+.frame {
+  text-align: center;
+  border: 3px solid yellow;
+  margin: 10px 10px;
+}

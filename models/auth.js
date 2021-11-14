@@ -1,4 +1,4 @@
-var data = require('./sql')
+var data = require('./userdata')
 
 function authChecker(req, res, next) {
     if (typeof req.headers.cookie == "undefined") {
