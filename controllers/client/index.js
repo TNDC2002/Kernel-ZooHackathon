@@ -19,7 +19,7 @@ exports.Search = (req, res) => {
     data.find({ user: req.body.search }).exec((err, data) => {
         var searched = req.body.search
         if (data[0]){
-            console.log(data)
+            // console.log(data)
             res.render("result", { results: data, searched: searched })
         }
         else{

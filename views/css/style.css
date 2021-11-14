@@ -1,11 +1,13 @@
 .bg1 {
   background-image: url("/client/image/Login\ box.png");
 
+  /* Full height */
   height: 500px;
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contain1 {
@@ -21,12 +23,115 @@
 
 .contain2 {
   position: absolute;
-  right: 0;
-  left: 280px;
-  margin: 20px;
-  max-width: 300px;
+  margin-left: 600px;
+  margin-right: 20px;
   background-color: #869ea1;
 }
+
+.bg2 {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background-image: url("/client/image/Register\ box.png");
+
+  height: 800px;
+
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.bg3 {
+  background-image: url("/client/image/photo-1613445586903-097707f5906a.jpg");
+
+  height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.column {
+  margin-top: 10px;
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.color {
+  background-image: url("../image/annie-spratt-yI3weKNBRTc-unsplash.jpg");
+  background-size: cover;
+}
+
+.row-cs {
+  display: flex;
+  border-style: solid;
+  margin: 10px 100px 10px 100px;
+  text-align: justify;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+.grey {
+  background-color: C4C4C4;
+}
+
 .box {
   position: relative;
   text-align: center;
@@ -38,4 +143,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.form {
+  padding-bottom: 0px;
 }
