@@ -3,8 +3,9 @@ const schema = new mongoose.Schema({
     specie: String,
     disease: String,
     location: [String],
-    dangerous_tag: String,
+    Risk_level: String,
     last_update: String,
+    picture: String
 })
 
 module.exports = mongoose.model('disease',schema)
