@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/diseases', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/datas', { useNewUrlParser: true, useUnifiedTopology: true })
 .catch((err)=>console.log(err))
 const schema = new mongoose.Schema({
     specie: String,
