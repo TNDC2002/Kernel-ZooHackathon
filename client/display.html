@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account page</title>
+    <title>Display</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -38,38 +38,37 @@
         </nav>
     </header>
     <main>
-        <h1 style="text-align: center;">Complete your Profile to continue</h1>
+        <h1 style="text-align: center;">My profile</h1>
+        <br>
         <div class="container">
-            <form>
-                <div class="form-group">
-                    <label for="name">Full name</label>
-                    <input type="text" class="name form-control" id="name">
-                </div>
-                <div class="form-group">
-                    <label for="dob">Day of Birth</label>
-                    <input type="text" class="dob form-control" id="dob">
-                </div>
-                <div class="form-group">
-                    <label for="tel">Telephone</label>
-                    <input type="text" class="tel form-control " id="tel">
-                </div>
-                <div class="form-group">
-                    <label for="cer">Id-certificate</label>
-                    <input type="text" class="cer form-control" id="cer">
-                </div>
-                <div class="form-group">
-                    <label for="mail">Email</label>
-                    <input type="text" class="mail form-control" id="mail">
-                </div>
-                <div class="container">
-                    <div class="row">
-                      <div class="col text-center">
-                        <button class="btn">Submit</button>
-                      </div>
-                    </div>
-                </div>
-              <br>
-            </form>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Status</td>
+                        <td>verified or not</td>
+                      </tr>
+                  <tr>
+                    <td>Full name</td>
+                    <td>name</td>
+                  </tr>
+                  <tr>
+                    <td>Day of Birth</td>
+                    <td>DD/MM/YY</td>
+                  </tr>
+                  <tr>
+                    <td>Telephone</td>
+                    <td>phone</td>
+                  </tr>
+                  <tr>
+                    <td>Id-certificate</td>
+                    <td>cer</td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td>mail</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
         
     </main>
