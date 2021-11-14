@@ -102,8 +102,22 @@
   background-size: cover;
 }
 
-.frame {
-  text-align: center;
-  border: 3px solid yellow;
-  margin: 10px 10px;
+.row-cs {
+  display: flex;
+  border-style: solid;
+  margin: 10px 100px 10px 100px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+.grey {
+  background-color: C4C4C4;
 }
