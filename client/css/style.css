@@ -1,12 +1,13 @@
 .bg1 {
-  margin-left: 0px;
   background-image: url("/client/image/Login\ box.png");
 
+  /* Full height */
   height: 500px;
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contain1 {
