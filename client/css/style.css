@@ -76,3 +76,11 @@
   flex: 33.33%;
   padding: 5px;
 }
+
+footer {
+  margin-top: 10px;
+}
+
+.grey {
+  background-color: C4C4C4;
+}
