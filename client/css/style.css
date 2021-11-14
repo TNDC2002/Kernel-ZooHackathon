@@ -28,3 +28,15 @@
   max-width: 300px;
   background-color: #869ea1;
 }
+.box {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
