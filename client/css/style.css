@@ -28,11 +28,25 @@
   background-color: #869ea1;
 }
 .box {
+  padding-bottom: 50px;
   position: relative;
   text-align: center;
   color: white;
   top: 10px;
   bottom: 10px;
+}
+
+.bg2 {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background-image: url("/client/image/Register\ box.png");
+
+  height: 800px;
+
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .centered {
