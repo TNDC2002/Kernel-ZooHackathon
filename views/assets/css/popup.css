@@ -1,0 +1,132 @@
+/* Popup container */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* The actual popup (appears on top) */
+
+.popup .popuptext {
+    padding: 40px 40px 40px 40px;
+    position: fixed;
+    visibility: hidden;
+    width: 70%;
+    height: 60%;
+    background-color: rgb(253, 253, 253, 0.9);
+    color: #fff;
+    text-align: left;
+    border-radius: 10px;
+    z-index: 1;
+    bottom: 10%;
+    left: 15%;
+    right: auto;
+    z-index: 200;
+    color: black;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+}
+
+
+/* Popup arrow */
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Start customize Popuptext */
+
+#myPopup1>div {
+    display: flex;
+}
+
+#myPopup1 .big-content {
+    width: 40%;
+    padding: 0 5% 0 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#myPopup1 .small-content {
+    line-height: 30px;
+}
+
+#myPopup2 div {
+    display: flex;
+    justify-content: left;
+    margin-top: 30px;
+}
+
+#myPopup2 div li {
+    margin-right: 90px;
+}
+
+#myPopup2>div>li>img {
+    height: 20px;
+    width: auto;
+}
+
+.lang-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lang-container li {
+    text-align: center;
+    display: flexbox;
+}
+
+.lang-container li>img {
+    height: 80px;
+    border-radius: 20px;
+    width: auto;
+}
+
+.close {
+    width: 5%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 45%;
+    margin-right: auto;
+}
