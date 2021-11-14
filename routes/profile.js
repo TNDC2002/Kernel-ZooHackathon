@@ -1,5 +1,5 @@
 var express = require('express');
-var data = require('../models/sql')
+var data = require('../models/userdata')
 var router = express.Router();
 var myMiddleware = require('../models/auth')
 

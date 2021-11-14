@@ -1,4 +1,4 @@
-var data = require('./sql')
+var data = require('./userdata')
 function CheckLogin(req, res) {
     if (typeof req.headers.cookie == "undefined") {
         return false

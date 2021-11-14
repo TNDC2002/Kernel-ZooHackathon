@@ -1,20 +1,14 @@
+var bodyparser = require('body-parser')
 var express = require('express');
 //const Auth = require('../models/auth');
-var data = require('../models/sql')
+
 var router = express.Router();
-var CheckLogin = require('../models/login_checker_forindex')
+var controler = require("../controllers/client/index")
 
-router.get('/', function (req, res) {
-    var checklogin = CheckLogin(req, res)
-    if (checklogin == false) {
-        res.render('index', { login: false });
-    } else {
-        var id = req.signedCookies.UUID
-        data.findOne({ '_id': id }).exec((err, user) => {
-            var cuser = user.user
-            res.render("index", { login: true, userdata: cuser, rmoney: user.rmoney })
-        })
-    }
-})
+//post setup
+var jsonParser = bodyparser.json()
+var urlencodedParser = bodyparser.urlencoded({ extended: true })
 
+router.get('/', controler.index)
+router.post('/',urlencodedParser,controler.Search)
 module.exports = router
