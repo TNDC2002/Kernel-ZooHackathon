@@ -1,4 +1,4 @@
-.bg {
+.bg1 {
   background-image: url("/client/image/Login\ box.png");
 
   height: 500px;
@@ -6,11 +6,10 @@
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
 
-.contain_bg {
+.contain1 {
   position: absolute;
   right: 0;
   top: 70px;
@@ -18,5 +17,14 @@
   margin: 20px;
   max-width: 300px;
   padding: 16px;
+  background-color: #869ea1;
+}
+
+.contain2 {
+  position: absolute;
+  right: 0;
+  left: 280px;
+  margin: 20px;
+  max-width: 300px;
   background-color: #869ea1;
 }
