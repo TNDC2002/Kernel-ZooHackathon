@@ -39,3 +39,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.header {
+  padding-bottom: 20px;
+}
+.color {
+  background-image: url("../image/annie-spratt-yI3weKNBRTc-unsplash.jpg");
+  background-size: cover;
+}
