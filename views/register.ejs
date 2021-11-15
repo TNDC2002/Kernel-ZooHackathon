@@ -1,44 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../img/webdevico_v2.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>Contribution</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="./sign.css">
-    <!--
-
-TemplateMo 568 DigiMedia
-
-https://templatemo.com/tm-568-digimedia
-
--->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="sign-container">
-        <h2>Sign Up</h2>
-        <!--https://www.w3schools.com/tags/att_form_action.asp document for using action atribute-->
-        <form action="./register", method = "post">
-            <label for="username">Username:</label><br/>
-            <input type="text" id="username" name="username"><br><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br><br>
-            <label for="password">Retype Password:</label><br>
-            <input type="password" id="password_confirmation" name="password_confirmation"><br><br>
-            <input type="submit" id="button" value="Sign Up"><br><br>
-            <span>Already have an account? <a href="./login">Sign in</a></span>
-        </form>
-    </div>
+    <header>
+        <div class="container header">
+            <div>
+                <img src="image/Logo.png" class="align-items-center" alt="Kernel logo">
+                <div class="float-right justify-content-center"><a href="user_page.html">Create accout/ Already have</a>
+                </div>
+            </div>
+        </div>
+        <nav class="container navbar navbar-expand-sm bg-white justify-content-end">
+
+            <!-- Links -->
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="result.html">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div>
+            <div class="row bg2">
+                <!-- <img src="image/Register box.png" class="align-items-center" alt="Kernel logo"> -->
+                <div class="contain2 col-6 abc">
+
+                    <form class="form" action="/register" method="post">
+                        <h1 class="text-center">Register</h1>
+
+                        <div>
+                            <div class="form-group">
+                                <label for="username">Email</label>
+                                <input type="text" name="username" class="form-control">
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" name="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Repeat password</label>
+                                <input type="password" name="password_confirmation" class="form-control">
+                            </div>
+
+                            <!-- báo lỗi sai -->
+                            <div style="color: red;">
+                                <p>
+                                    <%=mess_err%>
+                                </p>
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <button class="btn">Enter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <br>
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="row">
+            <div class="col-3">
+                <h1>Kernel</h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat.
+                </p>
+            </div>
+            <div class="col-3">
+                <h2>Amet minim</h2>
+                <p>Amet minim</p>
+                <p>Amet minim</p>
+                <p>Amet minim</p>
+                <p>Amet minim</p>
+            </div>
+            <div class="col-3">
+                <h2>Amet minim</h2>
+                <p>Amet minim</p>
+                <p>Amet minim</p>
+                <p>Amet minim</p>
+                <p>Amet minim</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
+</html>

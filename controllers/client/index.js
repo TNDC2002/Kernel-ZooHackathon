@@ -10,20 +10,27 @@ exports.index = (req, res) => {
     } else {
         var id = req.signedCookies.UUID
         data.findOne({ '_id': id }).exec((err, user) => {
-            var cuser = user.user
-            res.render("index", { login: true, userdata: cuser, rmoney: user.rmoney })
+            // var cuser = user.user
+            res.render("index", { login: true })
         })
     }
 }
 exports.Search = (req, res) => {
-    data.find({ user: req.body.search }).exec((err, data) => {
+    disease.find({ location: req.body.search }).exec((err, data) => {
+        if(err){console.log(err)}
         var searched = req.body.search
         if (data[0]){
             // console.log(data)
-            res.render("result", { results: data, searched: searched })
+            var i ;
+            var result = [];
+            for(i = 0;i < data.length;i++){
+                result.push(data[i].toObject()) 
+            }
+            // console.log(result[0].specie_vn)
+            res.render("result", { results: result})
         }
         else{
-            res.render("result", { results: 0, searched: searched})
+            res.render("result", { results: 0})
         }
         
     })
