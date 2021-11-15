@@ -1,15 +1,16 @@
 var express = require('express');
-var data = require('../models/userdata')
+
 var router = express.Router();
 var myMiddleware = require('../models/auth')
+var controller = require('../controllers/client/profile')
 
-router.get('/', myMiddleware, function (req,res) {
-    var id = req.signedCookies.UUID
-    data.findOne({ '_id': id }).exec((err, user) => {
-        var cuser = user.user
-        res.render("profile", {userdata: cuser, rmoney: user.rmoney, ID: id, date: user.date, kiemcuong: user.kiemcuong })
-    })
-})
+//post setup
+var bodyparser = require('body-parser')
+var jsonParser = bodyparser.json()
+var urlencodedParser = bodyparser.urlencoded({ extended: true })
+
+router.get('/', myMiddleware,controller.index)
+router.post('/',controller.update)
 
 module.exports = router
 

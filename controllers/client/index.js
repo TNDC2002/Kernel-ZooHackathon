@@ -25,6 +25,7 @@ exports.Search = (req, res) => {
             var result = [];
             for(i = 0;i < data.length;i++){
                 result.push(data[i].toObject()) 
+                
             }
             // console.log(result[0].specie_vn)
             res.render("result", { results: result})

@@ -57,14 +57,15 @@
       <h1 style="text-align: center; border: 2px solid black; margin-left: 50px; margin-right: 50px;">We dont have data in this area yet</h1>
     <%}else{%>
       <% results.forEach((value, index)=> {%>
+        <%console.log(value.picture)%>
         
       <div class="row-cs">
         <div class="column">
-          <img src="img_snow.jpg" alt="Snow" style="width:100%">
+          <img src=<%=value.picture%> alt="Snow" style="width:100%">
         </div>
         <div class="col-8">
           <h3>Common name: <%=value.specie_vn%></h3>
-          <p>Science name:    <%=value.specie_sc%></p>
+          <p>Scienctific name:    <%=value.specie_sc%></p>
           <p>Status:          <%=value.status%></p>
           <p>Disease:         <%=value.disease%></p>
           <label for="file">Risk level:</label>

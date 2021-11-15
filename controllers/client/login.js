@@ -33,7 +33,7 @@ module.exports.login = (req, res) => {
                     res.cookie('UUID', id, {
                         signed: true
                     })
-                    res.redirect('/')
+                    res.redirect('/user/profile')
                 }
                 else {
                     var msg = 'mật khẩu không đúng'
