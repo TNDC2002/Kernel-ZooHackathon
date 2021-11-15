@@ -160,8 +160,8 @@ footer {
 }
 
 .bg5 {
-  background-image: url("/client/image/98512212.png");
-  padding-top: 250px;
+  background-image: url("/client/image/cover.jpg");
+  padding-top: 120px;
   /* Full height */
   height: 800px;
   width: auto;
@@ -183,4 +183,22 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.cover {
+  font-family: Consolas, monaco, monospace;
+  font-weight: 500px;
+  font-size: 3em;
+  color: #4298a9;
+}
+
+.big {
+  font-family: Consolas, monaco, monospace;
+  font-weight: 500px;
+  font-size: 4em;
+  color: #4298a9;
+}
+
+.cover h2 {
+  color: #4298a9;
 }
