@@ -104,7 +104,7 @@ exports.MailVerify = (user, secret) => {
     sendMail.config = {
         url: 'https://api.eu.mailgun.net/v3/levelhigh.site/messages',
         username: 'api',
-        password: '9a124878543c31e014b0f109ce2890f6-30b9cd6d-6cc2a8ff'
+        password: 'key-ff3431ee75884433aafc7f2c893c1638'
     };
 
     sendMail.sendMail(user, {

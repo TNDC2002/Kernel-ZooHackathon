@@ -46,8 +46,8 @@
             <h1>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </h1>
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
             <div>
-                <form action="/action_page.php">
-                    <input type="text" placeholder=<%= searched%> name="search">
+                <form action="/" method="post">
+                    <input type="text" placeholder="Search..." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
@@ -63,12 +63,12 @@
           <img src="img_snow.jpg" alt="Snow" style="width:100%">
         </div>
         <div class="col-8">
-          <h3>Tên Tiếng Việt: <%=value.user%></h3>
-          <p>Tên khoa học: </p>
-          <p>Tình trạng:</p>
-          <p>Bệnh:</p>
-          <label for="file">Downloading progress:</label>
-          <progress id="file" value="32" max="100"><span>32%</span></progress>
+          <h3>Common name: <%=value.specie_vn%></h3>
+          <p>Science name:    <%=value.specie_sc%></p>
+          <p>Status:          <%=value.status%></p>
+          <p>Disease:         <%=value.disease%></p>
+          <label for="file">Risk level:</label>
+          <progress id="file" value=<%=value.Risk_level%> max="100"><span><%=value.Risk_level%>%</span></progress>
         </div>
       </div>
       <% });%>

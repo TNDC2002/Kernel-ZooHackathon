@@ -10,7 +10,7 @@ module.exports.index = (req, res) => {
 
 module.exports.login = (req, res) => {
 
-    var ruser = req.body.username
+    var ruser = req.body.email
     var rpass = req.body.password
     if (ruser && rpass) {
         data.findOne({ 'user': ruser }).exec((err, user) => {
